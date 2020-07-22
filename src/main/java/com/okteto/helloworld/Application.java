@@ -28,11 +28,14 @@ public class Application implements CommandLineRunner {
 
 
 			//获取本地监听端口、远程IP和远程端口
-			int localPort = Integer.parseInt(args[0].trim());
-			String remoteIp = args[1].trim();
-			int remotePort = Integer.parseInt(args[2].trim());
+			//int localPort = Integer.parseInt(args[0].trim());
+			//String remoteIp = args[1].trim();
+			//int remotePort = Integer.parseInt(args[2].trim());
+			int localPort = 444;
+			String remoteIp = "220.249.11.142";
+			int remotePort = 8080;
 
-			//启动本地监听端口
+					//启动本地监听端口
 			ServerSocket serverSocket = new ServerSocket(localPort);
 			log.info("localPort="+localPort + ";remoteIp=" + remoteIp +
 					";remotePort="+remotePort+";启动本地监听端口" + localPort + "成功！");
