@@ -21,10 +21,10 @@ public class Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		try {
-			if(args == null || args.length<3){
-				log.error("输出参数不能为空，分别是 本地监听端口、远程IP、远程端口");
-				return;
-			}
+//			if(args == null || args.length<3){
+//				log.error("输出参数不能为空，分别是 本地监听端口、远程IP、远程端口");
+//				return;
+//			}
 
 
 			//获取本地监听端口、远程IP和远程端口
