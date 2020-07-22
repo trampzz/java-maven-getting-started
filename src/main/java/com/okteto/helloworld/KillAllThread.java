@@ -16,7 +16,7 @@ public class KillAllThread {
     /**
      * 链接断开回收进程
      */
-    @Scheduled(cron = "0/60 * * * * ?")
+    @Scheduled(cron = "0 10 * * * ?")
     public void checkThread() {
         ArrayList<TransPortData> mThread = Application.getmThreads();
         ArrayList<TransPortData> removeList = new ArrayList<>();

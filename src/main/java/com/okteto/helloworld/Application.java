@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 
 @Slf4j
 @SpringBootApplication
+@EnableScheduling
 public class Application implements CommandLineRunner {
 
 	public static void main(String[] args) {
@@ -31,9 +33,9 @@ public class Application implements CommandLineRunner {
 			//int localPort = Integer.parseInt(args[0].trim());
 			//String remoteIp = args[1].trim();
 			//int remotePort = Integer.parseInt(args[2].trim());
-			int localPort = 444;
+			int localPort = 8080;
 			String remoteIp = "220.249.11.142";
-			int remotePort = 8080;
+			int remotePort = 444;
 
 					//启动本地监听端口
 			ServerSocket serverSocket = new ServerSocket(localPort);
